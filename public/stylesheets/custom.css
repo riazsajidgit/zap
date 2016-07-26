@@ -1,0 +1,368 @@
+/* 
+CSS RESETS
+*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+nav ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+/* change colours to suit your needs */
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+/* change colours to suit your needs */
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* change border colour to suit your needs */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+input, select {
+	vertical-align: middle;
+}
+a {
+	cursor: pointer;
+}
+.side-bar, .main-content, .form-search .form-control, .navigation-section .navbar-nav li span {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+a {
+	color: #28303B;
+}
+a, button, input {
+	outline: none;
+}
+body {
+	font-size:13px;
+	background:#f1f4f9;
+}
+/*****************************************************************************************INNER CUSTOM CSS*********************************************/
+.content-area {
+	position:relative;
+	min-height:480px;
+}
+.app-header {
+	padding: 15px 0;
+    background: #e9edf2;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
+    position: relative;
+    z-index: 20;
+}
+.side-bar {
+	background:#28303b;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 268px;
+	height:100%;
+    z-index: 10;
+}
+.main-content {
+	position: relative;
+    margin-left: 268px;
+
+}
+.m-title {
+	padding:10px;
+    font-size: 11px;
+}
+.navigation-section .navbar-nav>li, .navigation-section .navbar-nav {
+	display: block;
+	float: none;
+}
+.navigation-section .navbar-nav>li a {
+	font-weight: bold;
+}
+.navigation-section .navbar-nav>li.active > .dropdown-menu {
+	display: block;
+}
+.navigation-section .navbar-nav>li a, .m-title, .nav-trigger {
+	color: #FFF;
+	text-transform: uppercase;
+}
+.navigation-section .nav>li>a:focus, .navigation-section .nav>li>a:hover, .navigation-section .navbar-nav>li.active a {
+	background: #222b34;
+	color: #fff;
+}
+.navigation-section .navbar-nav>li a, .m-title {
+	border-bottom: solid 1px #212931;
+}
+.navigation-section .navbar-nav li span {
+	margin-left: 10px;
+}
+.navigation-section .navbar-nav li i, .navigation-section .navbar-nav li em {
+	font-size: 18px;
+}
+.navigation-section .navbar-nav li em {
+	float: right;
+}
+.gw-submenu {
+	display: none;
+}
+.nav-trigger {
+	border-top: solid 1px #0d205a;
+	display: block;
+	padding: 10px 20px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 22px;
+	text-align: right;
+}
+.nav-trigger:hover, .nav-trigger:visited {
+	color: #FFF;
+}
+.side-bar.collapse-sidebar {
+	width: 60px;
+}
+.collapse-sidebar .navbar-nav>li a span, .collapse-sidebar .m-title {
+	display: none;
+}
+.collapse-sidebar .navbar-nav>li a {
+	text-align: center;
+}
+.gw-submenu li, .gw-submenu li a {
+	display: block;
+	background: #171D23;
+}
+.navigation-section .navbar-nav>li .gw-submenu li a {
+	padding: 15px 10px 15px 30px;
+	background: none;
+	color: #fff;
+	font-size: 12px;
+	border-bottom: solid 1px #12161B;
+}
+.navigation-section .navbar-nav>li .gw-submenu li {
+	list-style: circle
+}
+.navigation-section .navbar-nav>li .gw-submenu li a:hover, .navigation-section .navbar-nav>li .gw-submenu li.active a {
+	color: #FFF;
+	text-decoration: none;
+}
+.collapse-sidebar .gw-submenu {
+	position: absolute;
+	left: 100%;
+	top: 50px;
+	z-index: 10;
+	width: 240px;
+}
+.collapse-sidebar .gw-submenu li a {
+	text-align: left;
+}
+.collapse-sidebar em.fa {
+	display: none;
+}
+.collapse-sidebar .has-child.gw-submenu {
+}
+.collapse-sidebar li.has-child:hover .gw-submenu {
+	display: block;
+}
+.collapse-sidebar > .navigation-section > ul > li > a > span {
+	position: absolute;
+	padding: 16px 10px 15px;
+	left: 50px;
+	top: 0;
+	min-width: 240px;
+	text-align: left;
+	z-index: 1000;
+	background: #162964;
+	color:#FFF;
+}
+.collapse-sidebar > .navigation-section > ul > li:hover span { display:block;}
+.navigation-section .navbar-nav {
+	margin: 0;
+}
+.img-inline {
+	display:inline-block;
+}
+.main-dashboard {
+	padding:100px 0;
+}
+h2 {
+	font-size:28px;
+	padding:15px 0;
+}
+
+.btn-normal {
+	background: #28303b;
+    color: #fff;
+}
+.btn-normal:hover, .btn-normal:active, .btn-normal:focus, .btn-normal:visited {
+	background: #171D23;
+	color: #fff;
+}
+.dashboard-buttons .btn-normal {
+    margin: 10px 5px;
+    min-width: 180px;
+}
+.dashboard-buttons .btn-normal i {
+    display: block;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+.app-footer {
+	border-top: solid 1px #E2E2E2;
+    padding: 15px;
+    background: #E9EDF2;
+}
+.pt-md {
+	padding-top:20px;
+}
+.breadcrumb {
+    margin-bottom: 20px;
+    background-color: #E9EDF2;
+    margin-top: 15px;
+}
+h3 {
+	font-size:22px;
+	padding:0 0 10px 0;
+}
+.db-select label {
+	display:block;
+	padding:10px;
+	padding-left: 30px;
+}
+.db-select label span {
+	float: right;
+    font-style: italic;
+    font-size: 11px;
+    color: #8E8E8E;
+}
+.db-select input[type=radio] {
+	margin-top:1px;
+}
+.db-select .radio {
+	margin:0;
+}
+.db-select .radio:hover {
+	/*background: #F3F3F3;*/
+}
+.db-select .radio:nth-child(odd) {
+	background: #F5F5F5;
+}
+.fileupload-success, .create-voucher {
+	display:none;
+}
+.file-ipload {
+	padding-bottom: 20px;
+    font-size: 20px;
+}
+.file-ipload i {
+	font-size: 25px;
+    margin-right: 12px;
+}
+.form-inline button span {
+	padding-left:5px;
+}
+.voucher-header {
+	border-bottom: solid 1px #E2E2E2;
+    padding: 10px;
+    background: #E9EDF2;
+	border-radius:5px;
+	margin:15px 0;
+}
+.voucher-header .form-group {
+	margin-bottom:0;
+}
+.voucher-header label {
+	display:block;
+	padding-bottom:5px;
+	font-weight:normal;
+	font-size:12px;
+}
+.voucher-header h4 {
+	font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0 0 0;
+}
+.voucher-footer {
+	padding:10px 0;
+	margin-bottom:15px;
+}
+.voucher-layout {
+	padding:20px 0;
+}
+.voucher-layout table {
+	background:#fff;
+}
+.border-black {
+	border-bottom:solid 2px #000 !important;
+}
+.thin-border td, .thin-border th {
+	border-color:#000 !important;
+	border-width:2px !important;
+}
+.voucher-layout table {
+	font-size:13px;
+}
+.voucher-layout table th {
+	font-weight:bold;
+}
+@media print { 
+	.app-header,
+	.side-bar,
+	.breadcrumb,
+	.print-actions,
+	.voucher-footer,
+	.app-footer {
+		display:none;
+	}
+	.main-content {
+		margin:0;
+	}
+	.voucher-layout table {
+		font-size:12px;
+	}
+}

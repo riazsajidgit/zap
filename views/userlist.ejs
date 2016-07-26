@@ -1,0 +1,7 @@
+<img src="http://localhost:3000/images/logo.png" height="45" width="193" />
+<ul>
+    <%= title %>
+    <% ulist.forEach(function(user) { %>
+        <li><%= user.first_name %> - <%= user.last_name %></li>
+    <% }); %>
+</ul>

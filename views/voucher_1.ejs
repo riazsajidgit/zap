@@ -1,0 +1,23 @@
+<% include header %>
+<div class="app content-area">
+    <% include sidebar %>
+    <div class="main-content">
+        <div class="container-fluid">
+          <ol class="breadcrumb">
+            <li><a href="#">Accounts Management System</a></li>
+            <li class="active">Create Voucher</li>
+          </ol>
+          <h3 class="text-uppercase">Choose and import option</h2>
+          <div class="row">
+            <div class="col-sm-12 dashboard-buttons">
+              <button type="button" class="btn btn-normal btn-lg"><i class="fa fa-laptop" aria-hidden="true"></i>Import From <br>
+              Computer</button>
+              <button type="button" onclick="location.href = 'http://localhost:3000/voucher_2';" class="btn btn-normal btn-lg" data-toggle="modal" data-target="#db-model"><i class="fa fa-database" aria-hidden="true"></i>Import From <br>
+              Database</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<% include footer %>
